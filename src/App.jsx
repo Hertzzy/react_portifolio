@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/navbar';
 
 import homepage from './assets/imgs/homepage.jpg'
+import AppRoutes from './AppRoutes';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -14,9 +15,7 @@ function App() {
   return (
     <>
       <div className='homege'>
-        <Navbar />
-
-        <img src={homepage} alt="" className='h-1/3' />
+        <AppRoutes />
       </div>
     </>
   )
