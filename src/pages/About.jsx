@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { GrSystem } from "react-icons/gr";
@@ -6,10 +6,15 @@ import { GrSystem } from "react-icons/gr";
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaPython, FaReact, FaNode, FaPhp, FaLaravel } from "react-icons/fa";
 import { SiTailwindcss, SiMysql } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
+import { FaArrowUp } from "react-icons/fa";
+import BackToTop from '../components/BackToTop';
+
 
 
 
 const About = () => {
+
+
     return (
         <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
 
@@ -211,12 +216,8 @@ const About = () => {
                 <a href="https://laravel.com/" target='_blank'><FaLaravel fontSize={42} className=" text-red-400" /></a>
             </div>
 
-
-
-
+            <BackToTop />
         </div >
-
-
     )
 }
 

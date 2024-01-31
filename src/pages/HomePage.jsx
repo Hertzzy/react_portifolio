@@ -4,6 +4,7 @@ import { IoMdDownload } from "react-icons/io";
 
 import hero from "../assets/imgs/generate-me.png"
 import blob from '../assets/imgs/blob.svg'
+import BackToTop from '../components/BackToTop';
 
 const HomePage = () => {
     const downloadCv = () => {
@@ -57,7 +58,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-
+            <BackToTop />
         </div>
     )
 }
