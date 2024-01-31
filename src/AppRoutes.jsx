@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Navbar from "./components/navbar";
+import Footer from "./components/Footer";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 const AppRoutes = () => {
     return (
@@ -14,6 +17,7 @@ const AppRoutes = () => {
                         <>
                             <Navbar />
                             <HomePage />
+                            <Footer />
                         </>
                     }
                 />
@@ -24,18 +28,32 @@ const AppRoutes = () => {
                         <>
                             <Navbar />
                             <About />
-                        </>}
-                />
-                {/* <Route
-                    exact
-                    path=""
-                    element={ }
+                            <Footer />
+                        </>
+                    }
                 />
                 <Route
                     exact
-                    path=""
-                    element={ }
-                /> */}
+                    path="/projects"
+                    element={
+                        <>
+                            <Navbar />
+                            <Projects />
+                            <Footer />
+                        </>
+                    }
+                />
+                <Route
+                    exact
+                    path="/contact"
+                    element={
+                        <>
+                            <Navbar />
+                            <Contact />
+                            <Footer />
+                        </>
+                    }
+                />
             </Routes>
         </BrowserRouter>
     );

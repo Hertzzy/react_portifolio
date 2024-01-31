@@ -9,8 +9,8 @@ import { MdOutlineDarkMode } from "react-icons/md";
 const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'Sobre', href: '/about', current: false },
-    { name: 'Projetos', href: '#', current: false },
-    { name: 'Contato', href: '#', current: false },
+    { name: 'Projetos', href: '/projects', current: false },
+    { name: 'Contato', href: '/contact', current: false },
 ]
 
 

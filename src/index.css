@@ -43,3 +43,7 @@ html {
 .navation a:hover::before {
     transform: scaleX(1);
 }
+
+.styles-skills {
+    width: 700px;
+}
