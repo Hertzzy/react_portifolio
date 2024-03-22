@@ -1,19 +1,15 @@
-import { useState, React } from 'react'
-import './App.css'
-import Navbar from './components/navbar';
+import "./App.css";
 
-import homepage from './assets/imgs/homepage.jpg'
-import AppRoutes from './AppRoutes';
-
+import AppRoutes from "./AppRoutes";
 
 function App() {
   return (
     <>
-      <div className='homege'>
+      <div className="homege">
         <AppRoutes />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
